@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    width: 480px;
+    height: 480px;
+    grid-template-rows: repeat(var(--grid-rows), auto);
+    grid-template-columns: repeat(var(--grid-cols), auto);
+    flex-shrink: 0;
+}
+
+.square {
+    border: 1px solid black;
+    
+}
