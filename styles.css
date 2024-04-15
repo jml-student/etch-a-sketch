@@ -2,6 +2,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.gridSize {
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 15px 30px;
+    border: 0;
+    border-bottom: 4px solid rgb(139, 139, 139);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.gridSize:hover {
+    opacity: 0.9;
 }
 
 .container {
@@ -11,6 +29,7 @@ body {
     grid-template-rows: repeat(var(--grid-rows), auto);
     grid-template-columns: repeat(var(--grid-cols), auto);
     flex-shrink: 0;
+    border: 5px solid rgb(139, 139, 139);
 }
 
 .square {
